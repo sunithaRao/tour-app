@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tour-app/static/css/main.29120228.css",
-    "main.js": "/tour-app/static/js/main.9f4a82c9.js",
+    "main.js": "/tour-app/static/js/main.ee27e80a.js",
     "static/js/488.ebae5169.chunk.js": "/tour-app/static/js/488.ebae5169.chunk.js",
     "static/media/roboto-latin-700-normal.woff2": "/tour-app/static/media/roboto-latin-700-normal.4535474e1cf8598695ad.woff2",
     "static/media/roboto-latin-500-normal.woff2": "/tour-app/static/media/roboto-latin-500-normal.7077203b1982951ecf76.woff2",
@@ -61,11 +61,11 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/tour-app/static/media/roboto-greek-ext-400-normal.16eb83b4a3b1ea994243.woff",
     "index.html": "/tour-app/index.html",
     "main.29120228.css.map": "/tour-app/static/css/main.29120228.css.map",
-    "main.9f4a82c9.js.map": "/tour-app/static/js/main.9f4a82c9.js.map",
+    "main.ee27e80a.js.map": "/tour-app/static/js/main.ee27e80a.js.map",
     "488.ebae5169.chunk.js.map": "/tour-app/static/js/488.ebae5169.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.29120228.css",
-    "static/js/main.9f4a82c9.js"
+    "static/js/main.ee27e80a.js"
   ]
 }
