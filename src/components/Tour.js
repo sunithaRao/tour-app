@@ -7,23 +7,21 @@ import { Paper } from "@mui/material";
 import { BottomNavigation } from "@mui/material";
 import BasicModal from "../components/Modal";
 import { useParams } from "react-router-dom";
-import getTourInfo from "../utils/useTourInfo";
+import useTourInfo from "../utils/useTourInfo";
 
 export const Tour = () => {
   const [value, setValue] = React.useState(0);
   const { tourId } = useParams();
-  const tourInfo = getTourInfo(tourId);
+  const tourInfo = useTourInfo(tourId);
+  console.log("tourInfo", tourInfo[0].name);
   return (
     <Container sx={{ width: 900 }}>
       <Typography variant="h3" component="h1" marginTop={3}>
-        Kailasagiri in Visakhapatnam
+        {tourInfo[0].name} in{" "}
+        {tourId.toString().startsWith("1") ? "Visakhapatnam" : "Bangalore"}
       </Typography>
       <Box marginTop={3} sx={{ display: "flex" }}>
-        <img
-          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/40/56/f1/caption.jpg?w=300&h=300&s=1"
-          height={325}
-          alt=""
-        />
+        <img src={tourInfo[0].image} height={325} alt="" />
         <ImageCollage />
       </Box>
 
@@ -32,14 +30,7 @@ export const Tour = () => {
           About this ticket
         </Typography>
         <Typography variant="paragraph" component="p" marginTop={3}>
-          One place in Visakhapatnam which is as famous as the sprawling beaches
-          here is the Kailasagiri Park situated on a hilltop. Kailasagiri is one
-          of the prime attractions and a popular picnic spot for all the
-          tourists visiting the beautiful city of Vizag. Spread over 100 acres
-          on a hilltop, Kailasagiri offers a panoramic view of the surroundings
-          that every nature lover craves for. A well-maintained park,
-          Kailasagiri is always bustling with people enjoying the tranquil
-          atmosphere and scenic beauty around.
+          {tourInfo[0].aboutDescription}
         </Typography>
       </Box>
       <Box>

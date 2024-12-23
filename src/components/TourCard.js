@@ -67,6 +67,15 @@ const TourCard = ({ tour }) => {
                 ({tour.numberOfReviews} reviews)
               </Typography>
             </Box>
+            <Box
+              sx={{
+                display: "flex",
+              }}
+            >
+              <Typography variant="subtitle1" component="h4" marginTop={0}>
+                From Airport ₹{tour.price}
+              </Typography>
+            </Box>
           </Box>
         </Paper>
       </ThemeProvider>
