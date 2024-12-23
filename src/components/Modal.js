@@ -2,7 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
-import StaticDateRangePickerDemo from "./DatePicker";
+import StaticDatePickerLandscape from "./StaticDatePickerLandscape";
 
 const style = {
   position: "absolute",
@@ -30,7 +30,7 @@ export default function BasicModal() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <StaticDateRangePickerDemo />
+          <StaticDatePickerLandscape />
         </Box>
       </Modal>
     </div>
